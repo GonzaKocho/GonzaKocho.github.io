@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stortcut icon" href="./assets/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <nav class="navegacion">
+            <a class=" navegacion__enlace" href="=#presentacion">
+              <h2 class="navegacion__titulo">informatorio</h2>
+            </a>
+            <ul class="enlaces">
+              <li class="enlaces__item">
+                <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+              </li>
+              <li class="enlaces__item">
+                <a class="enlaces__enlace" href="#proyectos">Trabajos</a>
+              </li>
+            </ul>
+        </nav>
+    </header>
+    <main class="principal">
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor_info">
+                <h1 class="presentacion__titulo">Soy Diseñador Gráfico</h1>
+                <p class="presentacion__parrafo">Hola, me llamo Gonzalo Kochowiec y soy Licenciado en Diseño Gráfico y multimedia. En este portfolio les mostraré algunos de mis trabajos como diseñador gráfico.</p>
+                <div class="presentacion__contenedor_botones">
+                    <a href="#sobre-mi" class="boton" role="button">Sobre mi</a>
+                    <a href="./assets/docs/Currículum.pdf" target="_blank" class=" boton boton_oscuro" role="button">Descargar CV</a>
+                </div>
+            </div>
+        </section>
+        <article class="articulo sobre_mi" id="sobre-mi">
+            <h2 class="articulo__titulo">Un poco sobre mi</h2>
+            <div class="articulo__contenedor_descripciones">
+              <section class="seccion_descripcion">
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen"
+                    src="./assets/images/profile/FotoMia.jpg"
+                    alt="foto trabajando en la oficina"
+                    title="trabajando en la oficina"
+                  />
+                </div>
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                    Mi historia
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mi historia"
+                    aria-describedby="mi_historia_titulo"
+                  >
+                  Tengo 23 años, y desde que tengo memoria siempre he sido un apasionado de la tecnología, la computación, el diseño, los videojuegos y la lectura. 
+
+                  Hoy en día, trabajo como diseñador gráfico multimedia, donde puedo combinar todas mis pasiones. Mi trabajo me permite ser creativo, resolver problemas y crear experiencias visuales impactantes. En mi tiempo libre, sigo jugando y leyendo, siempre buscando nuevas maneras de expandir mis conocimientos y habilidades. Ser un fanático de la computación y la lectura ha definido quién soy y me ha llevado a una carrera que realmente amo.
+                  </p>
+                </div>
+              </section>
+              <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
+                pero cambiaremos el orden de los elementos dejando la imagen al final -->
+              <section class="seccion_descripcion">
+                <div
+                  class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                  aria-label="descripcion personal"
+                >
+                  <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                    Mis hobbies
+                  </h3>
+                  <p
+                    class="seccion_descripcion__parrafo"
+                    aria-label="Detalles de mis hobbies"
+                    aria-describedby="mis_hobbies_titulo"
+                  >
+                   Me gusta tener hobbies variados dentro de mi zona de confort, actividades como el diseño y los videojuegos es una excelente manera de equilibrar mi trabajo y mi ocio. 
+                  El diseño gráfico me permite expresar mi creatividad y mejorar mis habilidades técnicas.
+                  Los videojuegos no solo son una forma de entretenimiento, sino que también desarrollan mis habilidades cognitivas y sociales, ya sea jugando o participando en comunidades de jugadores. 
+                  Estos hobbies me proporcionan un escape del estrés diario y una forma de expresión personal, enriqueciendo mi tiempo libre y complementándose entre sí.
+                  </p>
+                </div>
+                <div class="seccion_descripcion__porta_retrato">
+                  <img
+                    class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                    src="./assets/images/profile/FotoTrabajo.jpg"
+                    alt="foto mientras me encontraba en una reunion de trabajo"
+                    title="selfie en una reunion"
+                  />
+                </div>
+              </section>
+            </div>
+          </article>
+
+          <article class="articulo proyectos" id="proyectos">
+            <h2 class="articulo__titulo">Mis proyectos</h2>
+            <div class="contenedor_tarjetas_grid">
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/stefano.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 1"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_1">titulo</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_1"
+                  >
+                     Diseño de logo para una tienda de ropa para hombres llamada Stefano, dónde el estilo siempre te acompaña.
+                  </p>
+                  
+                </div>
+              </article>
+              <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
+                Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/labi.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 2"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_2">titulo</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_2"
+                  >
+                    Diseño de logo para un Laboratorio de Análisis Integral, mejor conocido con el sobrenombre de LABI.
+                  </p>
+                
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/Estudio.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 3"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_3">titulo</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_3"
+                  >
+                    Diseño de logo para unas tarjetas de presentación de un estudio juridico, constituido por dos miembros S y G.
+                  </p>
+                  
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/sundara.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 4"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_4">titulo</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_4"
+                  >
+                    Diseño de logo para un salón de estética y masajes, transmitiendo un mensaje de tranqulidad con la forma y los colores.
+                  </p>
+                  
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/juridico.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 5"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_5">calculadora</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_5"
+                  >
+                    Diseño de logo para un estudio jurídico, utilizando bases de forma y contraforma.
+                  </p>
+            
+                </div>
+              </article>
+              <article
+                class="tarjeta"
+                aria-label="presentacion de proyecto personal"
+              >
+                <img
+                  class="tarjeta__imagen"
+                  src="./assets/images/proyectos/vitalisima.jpg"
+                  alt="imagen del proyecto"
+                  title="proyecto 6"
+                />
+                <div class="tarjeta__contenido">
+                  <h3 class="tarjeta__titulo" id="titulo_proyecto_6">titulo</h3>
+                  <span class="tarjeta__divisor"></span>
+                  <p
+                    class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                    aria-label="descripcion de proyecto personal"
+                    aria-describedby="titulo_proyecto_6"
+                  >
+                    Rediseño de logo para etiqueta de la marca de aguas embasadas vitalisima.
+                  </p>
+                  
+                </div>
+              </article>
+            </div>
+          </article>
+    </main>
+
+      <footer class="pie_de_pagina" role="contentinfo">
+        <div class="pie_de_pagina__columna">
+          <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+          <ul class="enlaces enlaces_redes">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://github.com/GonzaKocho"
+                target="_blank"
+                ><img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/github-logo.png"
+                  alt="logo de github"
+                  title="github"
+              /></a>
+            </li>
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://www.instagram.com/kocho.dgm/"
+                target="_blank"
+              >
+                <img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/ig-logo.png"
+                  alt="logo de instagram"
+                  title="instagram"
+                />
+              </a>
+            </li>
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="https://twitter.com/kochowiec79952"
+                target="_blank"
+                ><img
+                  class="enlaces__icono"
+                  src="./assets/images/logos/x-logo.png"
+                  alt="logo de X"
+                  title="X"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+        <div class="pie_de_pagina__columna">
+          <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+          <ul class="enlaces enlaces_vertical">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="mailto:mail@mail.com"
+                target="_blank"
+                >gonzaKochowiec@gmail.com</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+        <div class="pie_de_pagina__columna" role="navigation">
+          <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+          <ul class="enlaces enlaces_vertical">
+            <li class="enlaces__item">
+              <a
+                class="enlaces__enlace enlaces__enlace_footer"
+                href="#presentacion"
+                >Inicio</a
+              >
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+                >Sobre mi</a
+              >
+            </li>
+            <li class="enlaces__item">
+              <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+                >Proyectos</a
+              >
+            </li>
+          </ul>
+        </div>
+        <!-- por ultimo los derechos de la pagina -->
+        <div class="pie_de_pagina__copyright">
+          <p>©️Copyright 2024</p>
+        </div>
+      </footer>
+</body>
+</html>
